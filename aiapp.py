@@ -151,9 +151,7 @@ with c2:
 
 t = translations[lang_choice] 
 
-# ==========================================
-# 1. CROP PREDICTION (REAL ML)
-# ==========================================
+
 st.markdown("---")
 col1, col2 = st.columns(2)
 with col1:
@@ -256,9 +254,6 @@ if st.session_state.prediction:
                 # --- ERROR PRINTING ADDED HERE ---
                 st.error(f"❌ Audio/TTS Error: {e}")
 
-# ==========================================
-# 2. KISAN DHAN - GOVT SCHEMES
-# ==========================================
 st.markdown("---")
 st.header(t['schemes_title'])
 st.write("Find financial support & subsidies / आर्थिक मदद खोजें")
@@ -278,4 +273,5 @@ if st.button(t['find_schemes_btn'], use_container_width=True):
             st.error(f"❌ Scheme Error: {e}")
 
 st.markdown('<div style="text-align:center; padding:20px; color:grey;">Made with ❤️ by Team Debuggers</div>', unsafe_allow_html=True)
+
 
